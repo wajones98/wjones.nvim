@@ -296,6 +296,15 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+-- [[ Configure Neo-Tree ]]
+
+vim.keymap.set('n', '<leader>sF', ':Neotree filesystem reveal float<CR>', { desc = '[S]earch [F]ilesystem' })
+
+-- [[ Configure LazyGit ]]
+vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>', {
+  silent = true,
+  desc = 'Open LazyGit window'
+})
 
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
