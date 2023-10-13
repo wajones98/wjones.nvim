@@ -152,14 +152,6 @@ require('lazy').setup({
   },
 
   {
-      "kdheepak/lazygit.nvim",
-      -- optional for floating window border decoration
-      dependencies = {
-          "nvim-lua/plenary.nvim",
-      },
-  },
-
-  {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000,
@@ -239,7 +231,7 @@ require('lazy').setup({
   --    Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
-  -- { import = 'custom.plugins' },
+  { import = 'plugins' },
 }, {})
 
 -- [[ Setting options ]]
