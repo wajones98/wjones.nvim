@@ -1,4 +1,3 @@
-vim.keymap.set('n', '<leader>sF', ':Neotree filesystem reveal float<CR>', { desc = '[S]earch [F]ilesystem' })
 
 return {
     'nvim-neo-tree/neo-tree.nvim',
