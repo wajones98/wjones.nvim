@@ -31,5 +31,12 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
+local config = require("nvim-treesitter.configs")
+config.setup({
+    ensure_installed = { "lua", "javascript" },
+    highlight = { enable = true },
+    indent = { enable = true } 
+})
+
 require("catppuccin").setup()
 vim.cmd.colorscheme "catppuccin"
