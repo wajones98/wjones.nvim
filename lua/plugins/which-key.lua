@@ -12,7 +12,8 @@ return {
                 s = { name = "+[S]earch" },
                 G = { name = "+[G]it" },
                 g = { name = "+[G]o" },
+                c = { name = "+[C]ode" },
             },
         })
-    end
-} 
+    end,
+}
