@@ -5,7 +5,7 @@ return {
     },
     config = function()
         vim.keymap.set(
-            "n", "<leader>gw", ":LazyGit<CR>", 
+            "n", "<leader>Gw", ":LazyGit<CR>", 
             { silent = true, desc = "Open LazyGit [W]indow" }
         )
     end
