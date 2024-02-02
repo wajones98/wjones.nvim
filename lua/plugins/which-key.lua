@@ -8,9 +8,10 @@ return {
     config = function()
         local wk = require("which-key")
         wk.register({
-            ["<leader>s"] = {
-                name = "[S]earch"
-            }
+            ["<leader>"] = {
+                s = { name = "+[S]earch" },
+                g = { name = "+[G]it" }
+            },
         })
     end
 } 
