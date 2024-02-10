@@ -36,6 +36,13 @@ return {
 						end
 					end,
 				})
+
+				local errors = vim.diagnostic.get(nil, { severity = vim.diagnostic.severity.ERROR })
+				if #errors == 0 then
+					cmd = "templ generate " .. vim.fn.shellescape(filename)
+
+					vim.fn.jobstart(cmd)
+				end
 			end
 			vim.api.nvim_create_autocmd({ "BufWritePre" }, { pattern = { "*.templ" }, callback = templ_format })
 
