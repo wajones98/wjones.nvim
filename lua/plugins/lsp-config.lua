@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
 			auto_install = true,
-			ensure_installed = { "lua_ls", "gopls", "terraformls" },
+			ensure_installed = { "lua_ls", "gopls", "terraformls", "htmx", "templ" },
 		},
 	},
 	{
@@ -31,6 +31,12 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.terraformls.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.htmx.setup({
+				capabilities = capabilities,
+			})
+			lspconfig.templ.setup({
 				capabilities = capabilities,
 			})
 
