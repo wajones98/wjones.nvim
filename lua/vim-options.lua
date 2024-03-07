@@ -1,18 +1,40 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
+vim.g.have_nerd_font = false
 
-vim.o.clipboard = "unnamedplus"
+vim.opt.number = true
+-- TODO: Toggle keybinding for relative numbers
+vim.opt.relativenumber = true
 
--- Indent wrapped lines
-vim.o.breakindent = true
+vim.opt.mouse = 'a' 
 
--- Show autocomplete menu but require manual selection
-vim.o.completeopt = "menuone,noselect"
+vim.opt.showmode = false
 
--- Enable 24-bit colors
-vim.o.termguicolors = true
+vim.opt.clipboard = 'unnamedplus'
+
+vim.opt.breakindent = true
+
+vim.opt.undofile = true
+
+vim.opt.signcolumn='number'
+
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
+
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+--  See `:help 'list'`
+--  and `:help 'listchars'`
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Preview substitutions live, as you type!
+vim.opt.inccommand = 'split'
+
+-- Show which line your cursor is on
+vim.opt.cursorline = true
+
+-- Minimal number of screen lines to keep above and below the cursor.
+vim.opt.scrolloff = 10
