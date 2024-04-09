@@ -140,6 +140,7 @@ return {
 				},
 
 				jedi_language_server = {},
+				html = {},
 			}
 
 			-- Ensure the servers and tools above are installed
