@@ -6,6 +6,7 @@ vim.g.have_nerd_font = true
 vim.opt.number = true
 -- TODO: Toggle keybinding for relative numbers
 vim.opt.relativenumber = true
+vim.opt.signcolumn = "auto"
 
 vim.opt.mouse = "a"
 
@@ -16,8 +17,6 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.breakindent = true
 
 vim.opt.undofile = true
-
-vim.opt.signcolumn = "number"
 
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
