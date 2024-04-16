@@ -8,8 +8,8 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.gofmt,
 				null_ls.builtins.formatting.terraform_fmt,
-				null_ls.builtins.formatting.zigfmt,
-				null_ls.builtins.formatting.eslint_d,
+				-- null_ls.builtins.formatting.zigfmt,
+				-- null_ls.builtins.formatting.eslint_d,
 				null_ls.builtins.formatting.prettierd,
 			},
 			on_attach = function(client, bufnr)
