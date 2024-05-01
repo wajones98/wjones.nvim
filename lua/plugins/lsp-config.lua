@@ -113,7 +113,7 @@ return {
 				gopls = {},
 				zls = {},
 				-- pyright = {},
-				-- rust_analyzer = {},
+				rust_analyzer = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
@@ -138,7 +138,8 @@ return {
 						},
 					},
 				},
-
+				yamlls = {},
+				docker_compose_language_service = {},
 				jedi_language_server = {},
 				html = {},
 			}
