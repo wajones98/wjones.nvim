@@ -1,4 +1,7 @@
 return {
+	{
+		"mfussenegger/nvim-jdtls",
+	},
 	{ -- LSP Configuration & Plugins
 		"neovim/nvim-lspconfig",
 		dependencies = {
@@ -123,7 +126,7 @@ return {
 				tsserver = {},
 				angularls = {},
 				--
-
+				jdtls = {},
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes { ...},
