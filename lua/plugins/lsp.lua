@@ -69,9 +69,6 @@ return {
           -- or a suggestion from your LSP for this to activate.
           map("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
 
-          -- Code rename
-          map("<leader>cr", vim.lsp.buf.rename, "[C]ode [R]ename")
-
           -- Opens a popup that displays documentation about the word under your cursor
           --  See `:help K` for why this keymap
           map("K", vim.lsp.buf.hover, "Hover Documentation")
@@ -208,6 +205,8 @@ return {
           end,
         },
       }
+      -- Setup Gleam without mason
+      require("lspconfig").gleam.setup {}
     end,
   },
   { -- Autocompletion
@@ -281,7 +280,7 @@ return {
           -- Manually trigger a completion from nvim-cmp.
           --  Generally you don't need this, because nvim-cmp will display
           --  completions whenever it has completion options available.
-          ["<C-Space>"] = cmp.mapping.complete {},
+          ["<C-S>"] = cmp.mapping.complete {},
 
           -- Think of <c-l> as moving to the right of your snippet expansion.
           --  So if you have a snippet that's like:
