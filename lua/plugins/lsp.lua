@@ -155,11 +155,29 @@ return {
             },
           },
         },
-        yamlls = {},
         docker_compose_language_service = {},
         jedi_language_server = {},
         html = {},
         terraformls = {},
+        jsonls = {
+          settings = {
+            json = {
+              schemas = require("schemastore").json.schemas(),
+              validate = { enable = true },
+            },
+          },
+        },
+        yamlls = {
+          settings = {
+            yaml = {
+              schemaStore = {
+                enable = false,
+                url = "",
+              },
+              schemas = require("schemastore").yaml.schemas(),
+            },
+          },
+        },
       }
 
       -- Ensure the servers and tools above are installed
