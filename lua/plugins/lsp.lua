@@ -157,7 +157,14 @@ return {
         docker_compose_language_service = {},
         jedi_language_server = {},
         html = {},
-        terraformls = {},
+        terraformls = {
+          filetypes = {
+            "tf",
+            "terraform",
+            "terraform-vars",
+            "tfvars",
+          },
+        },
         jsonls = {
           settings = {
             json = {

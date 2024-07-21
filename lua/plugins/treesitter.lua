@@ -2,7 +2,7 @@ return { -- Highlight, edit, and navigate code
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   opts = {
-    ensure_installed = { "bash", "c", "html", "lua", "markdown", "vim", "vimdoc", "yaml" },
+    ensure_installed = { "bash", "c", "html", "lua", "markdown", "vim", "vimdoc", "yaml", "terraform" },
     -- Autoinstall languages that are not installed
     auto_install = true,
     highlight = {
@@ -20,6 +20,8 @@ return { -- Highlight, edit, and navigate code
     ---@diagnostic disable-next-line: missing-fields
     require("nvim-treesitter.configs").setup(opts)
 
+    -- TODO: Hacky way of getting Terraform files created whilst Neovim is open to get highlighting without restarting.
+    vim.treesitter.language.register("terraform", { "tf", "terraform", "tfvars", "terraform-vars" })
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
     --
