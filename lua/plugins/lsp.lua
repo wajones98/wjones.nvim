@@ -155,6 +155,7 @@ return {
           },
         },
         docker_compose_language_service = {},
+        pylsp = {},
         jedi_language_server = {},
         html = {},
         terraformls = {
