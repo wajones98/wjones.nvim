@@ -5,6 +5,7 @@ return {
     config = function()
       require("oil").setup {
         columns = { "icon" },
+        watch_for_changes = true,
         keymaps = {
           ["<C-h>"] = false,
           ["<M-h>"] = "actions.select_split",
